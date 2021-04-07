@@ -1,4 +1,4 @@
-package springforandroid.pactpub.sunnat629.basicauthinkotlin.basicauth
+package springforandroid.pactpub.sunnat629.basicauthinkotlin.network
 
 import okhttp3.Credentials
 import okhttp3.Interceptor
