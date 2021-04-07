@@ -18,16 +18,13 @@ class UserListAdapter(context: Context,
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val rowView = inflater.inflate(R.layout.user_list_item, parent, false)
 
-
         val name = rowView.findViewById(R.id.name) as TextView
         val email = rowView.findViewById(R.id.email) as TextView
-        val contactNumber = rowView.findViewById(R.id.contactNumber) as TextView
 
         val userDetails = getItem(position) as User
 
         name.text = userDetails.name
         email.text = userDetails.email
-        contactNumber.text = userDetails.contact_number
 
         return rowView
     }

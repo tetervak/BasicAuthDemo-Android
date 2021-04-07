@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp">
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="8dp">
 
     <TextView
         android:id="@+id/name"
@@ -14,24 +16,7 @@
         android:padding="5dp"
         android:textAppearance="?android:textAppearanceMedium"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/contactNumber"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@tools:sample/full_names" />
-
-    <TextView
-        android:id="@+id/contactNumber"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:padding="5dp"
-        android:textAppearance="?android:textAppearanceSmall"
-        app:layout_constraintBottom_toTopOf="@+id/email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        tools:text="@tools:sample/cities" />
+        tools:text="Lisa Simpson" />
 
     <TextView
         android:id="@+id/email"
@@ -40,10 +25,7 @@
         android:gravity="center_horizontal"
         android:padding="5dp"
         android:textAppearance="?android:textAppearanceSmall"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contactNumber"
-        tools:text="@tools:sample/cities" />
+        tools:text="lisa.simpson@gmail.com" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
